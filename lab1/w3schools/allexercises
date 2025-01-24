@@ -1,0 +1,655 @@
+HTML Introduction
+
+1) What does HTML stand for?
+Hyper Text Markup Language
+2) Which one of the following headers has the correct HTML syntax?
+<h1>Welcome</h1>
+3) Who invented HTML?
+Tim Berners-Lee
+
+HTML Basic
+
+1) What is a correct HTML markup for the document type declaration?
+<!DOCTYPE html>
+2) Place the Hello- and end-tags in the correct positions.
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My first heading</h1>
+<p>My first paragraph.</p>
+</body>
+</html>
+3) HTML elements are surrounded by a specific type of brackets, which one?
+<p>This is a paragraph</p>
+4) Fill in the missing code to complete the markup of the HTML hyperlink.
+<a href="https://www.w3schools.com">This is a link</a>
+
+HTML Elements 
+
+1) True or False. Empty elements must have a close tag.
+False
+2) Insert the correct end tag for the HTML heading.
+<h1>This is a heading</h1>
+3) Insert the correct end tags in this HTML document
+<html>
+<body>
+<h4>This is a heading</h4>
+<p>This is a paragraph</p>
+</body>
+</html>
+
+HTML Attributes
+
+1) Which of the following is a correct syntax for using an HTML attribute?
+<img src='img_girl.jpg'>
+2) Add a "tooltip" to the paragraph below with the text "About W3Schools".
+<p title ="About W3Schools">W3Schools is a web developer's site.</p>
+3) Set the size of the image to 250 pixels wide and 400 pixels tall.
+<img src="w3schools.jpg" width="250" height="400">
+4) Make the element below into a link that goes to "https://www.w3schools.com".
+<a href="https://www.w3schools.com">This is a link</a>
+5) Specify an alternate text for the image. Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.
+<imp src="w3schools.png" alt=w3schools Logo">
+
+HTML Headings
+
+1) Which of the following headers is the largest and most important header?
+<h1>
+2) Use the correct HTML tag to add a heading with the text "London".
+<h1>London</h1>
+3) Add six headings to the document with the text "Hello". Hello with the most important heading (the largest)  and end with the least important heading (the smallest) .
+<html>
+<body>
+<h1>Hello</h1>
+<h2>Hello</h2>
+<h3>Hello</h3>
+<h4>Hello</h4>
+<h5>Hello</h5>
+<h6>Hello</h6>
+</body>
+</html>
+
+HTML Paragraphs
+
+1) True or False. HTML paragraphs always starts on a new line.
+True
+2) Use the correct HTML tag to add a paragraph with the text "Hello World!".
+<html>
+<body>
+<p1>Hello World!</p>
+</body>
+</html>
+3) Clean up this document with proper end tags.
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+4) Add a horizontal rule between the heading and the paragraph.
+<h1>London</h1>
+<hr>
+<p>London is the capital city of England.
+It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+5) Add a line break in the middle of the paragraph:
+<p>My Bonnie lies<br>over the ocean.</p>
+6) Wrap this poem around HTML tags that will preserve all spaces and linebreaks when the element is displayed.
+<pre>
+    My Bonnie lies over the ocean.
+    My Bonnie lies over the sea.
+    My Bonnie lies over the ocean.
+    Oh, bring back my Bonnie to me.
+</pre>
+
+HTML Styles
+
+1) What is a correct way to add a background color to an HTML document?
+<body style='background-color:pink;'>
+2) Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue".
+<p style="color:blue;">This is a paragraph.</p>
+3) Use CSS to set the font of the paragraph to "courier".
+<p style="font-family:courier;">This is a paragraph.</p>
+4) Use CSS to center align the paragraph.
+<p style="text-align:center;">This is a paragraph.</p>
+5) Use CSS to set the text size to 50 pixels.
+<p style="font-size:50px;">This is a paragraph.</p>
+6) Use CSS to set the background color of the document to yellow.
+<html>
+<body style="background-color:yellow;">
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+7) Use CSS to center align the document.
+<html>
+<body style="text-align:center;">
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+HTML Formatting
+
+1) Two of the following HTML elements makes the text bold, which two?
+<strong> and <b>
+2) Add extra importance to the word "degradation" in the paragraph below.
+<p>
+WWF's mission is to stop the
+<strong>degradation</strong>of our
+planet's natural environment.
+</p>
+3) Emphasize the word "metropolitan" in the text below.
+<h1>Tokyo</h1>
+<p>
+Tokyo is the capital of Japan,
+the most populous <em>metropolitan</em>
+area in the world.
+</p>
+4) Highlight the word "FUN" in the text below.
+<p>
+HTML is <mark>FUN</mark> to learn!
+</p>
+5) Apply subscript formatting to the number "2" in the text below.
+<p>
+H<sub>2</sub>O is the scientific term for water.
+</p>
+6) Add a line through (strikeout) the letters "blue" in the text below.
+<p>
+My favorite color is <del>blue</del>red.
+</p>
+
+HTML Quotations
+
+1) Which of the following is NOT a quotation element (in fact, not an HTML element at all)?
+<quote>
+2) Use an HTML element to add quotation marks around the letters "cool".
+<p>I am so <q>cool</q>.</p>
+3) The text below should be a quoted section. Add the proper HTML element to it, and specify that it is quoted from the following URL: http://www.worldwildlife.org/who/index.html
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blackquote>
+4) Change text direction. Make the text below go right-to-left.
+<bdo dir="rtl">What a beatiful day!</bdo>
+5) The letters "WHO" in the text below is an abbreviation of "World Health Organization". Use an HTML element to provide the specified abbreviation of "WHO".
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+HTML Comments
+ 
+1) What is the correct syntax for adding a comment in HTML?
+<!-- This is a comment -->
+2) Use the HTML comment tag to make a comment out of the "This is a comment" text.
+<h1>This is a heading</h1>
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+3) Add comment tags around the paragraph:
+<!-- <p>This is a paragraph.</p> -->
+
+HTML Colors
+
+1. HTMLColors
+1) Do you remember any legal HTML color names? Which one of the following is a legal HTML color?
+Tomato
+2) Insert the correct property to make the text color violet.
+<p style="color: violet">This is a paragraph.</p>
+3) The Alpha channel of a color controls the color-transparency, but which of the following values will be MOST transparent?
+background-color:rgba(255, 0, 0, 0);
+2.HTML RGB and RGBA Colors
+1) What is the color of the following text: Hello
+color:rgb(0, 255, 0)
+2) Insert the correct RGB color values to make the background color completely blue.
+<p style="background-color:rgb(0,0,255)">This is a paragraph.</p>
+3) Insert the a background color where green has the value 100, red has the value 106, and blue has the value 205.
+<p style="background-color:rgb(106,100,205)">This is a paragraph.</p>
+3. HTML HEX Colors
+1) What is the highest HEX number of the following:
+#BB
+2) Insert the correct HEX value to make the text color white.
+<p style="color: #ffffff">This is a paragraph.</p>
+3) Which one of the following will result in a grey color?
+#A0A0A0
+4.HTML HSL and HSLA Colors
+1) Which one of the following color values will result in a black color?
+hsl(0, 100%, 0%)
+2) Insert the HSLA value to make a color with no hue, 100% saturation, 50% lightness, and 50% transparency.
+<p style="color: hsla(0, 100%, 50%, 0.5)">This is a paragraph.</p>
+3) What does HSL stand for?
+Hue, Saturation and Lightness
+
+HTML Styles - CSS
+
+1) What is a correct syntax for linking to an external stylesheet?
+<link rel='stylesheet' href='styles.css'>
+2) { fillintheblanks: "exercise_html_colors1.htm" }, Use CSS to set the background color of the document (body) to yellow.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{ 
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<h1>My Home Page</h1>
+</body>
+</html>
+3) Use CSS to set the font of the document to "courier".
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family:courier;}
+</style>
+</head>
+<body>
+<h1>My home Page</h1>
+</body>
+</html>
+4) Use CSS to set the text color of the document to red.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {color:red;}
+</style>
+</head>
+<body>
+<h1>My Home Page</h1>
+</body>
+</html>
+5) Use CSS to make a yellow, 1 pixel thick, border around all paragraphs.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {border: 1px solid yellow;}
+</style>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+HTML Links
+
+1.Links
+1) What is a correct syntax for an HTML hyperlink?
+<a href='/home.htm'>Visit W3Schools.com!</a>
+2) Use the correct HTML to make the text below into a link to "default.html".
+<a href="default.html">Visit our HTML tutorial.</a>
+3) Use the correct HTML attribute to make the link open in a new window.
+<a href="html_images.asp" target="_blank">HTML Images</a>
+4) Use the correct HTML to make the image become a link to "default.html".
+<a href="default.html">
+<img src="smiley.gif">
+</a>
+5) Add a "tooltip" to the link. The "tooltip" should say "Home".
+<a href="default.html" title="Home">Back to Home</a>
+2.Link Colors
+1) True or False. By default all hyperlinks are underlined.
+True
+2) Use CSS to remove the underline from the link.
+<a href="html_images.asp" style="text-decoration:none;">HTML Images</a>
+3) What is a correct syntax for making a link red when you mouse over it?
+<style>
+a:hover {color:red}
+</style>
+3.Link Bookmarks
+1) What HTML attribute is used to create a bookmark?
+The id attribute
+2) Add a link to a bookmark, on the same page, with the id="mytext".
+<a href="#mytext">Jump to new text</a>
+3) What is a correct syntax for linking to a bookmark named C4 on another page?
+<a href='demo.html#C4'>Jump to Chapter 4</a>
+
+HTML Images
+
+1.Images
+1) What is a correct HTML element for adding an image?
+The <img> element
+2) Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.
+<img src="scream.png" width="250" height="400">
+3) Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.
+<img src="scream.png" style="width:250px;height:400px;">
+4) Use the correct HTML to make the image become a link to "default.html".
+<a href="default.html">
+<img src="smiley.gif">
+</a>
+5) Make the image below float to the right of the paragraph.
+<p>
+<img src="smiley.gif" style="float:right;">
+This is a paragraph.
+This paragraph contains an image
+</p>
+6) Add the correct HTML attribute to display the "smiley.gif" image.
+<img src="smiley.gif">
+7) Specify an alternate text for the image. The alternate text should say "Smiley". 
+Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.
+<img src="smiley.gif" alt="Smiley">
+2.Image Map
+1) What is a correct HTML element for defining an image map?
+The <map> element
+2) What is another HTML element used when defining image maps?
+The <area> element
+3) For image maps, specify a legal value for the area tag's shape attribute. (Any legal value will give a correct answer)
+<area shape="default" href="default.html">
+3.Background Images
+1) What is a correct CSS property for defining background images?
+The background-image property
+2) To add a background image on an entrire HTML page, on which element should you specify the background image?
+The <body> element
+3) Add a background image named "myimage.png" on a HTML element.
+<p style="background-image: url('myimage.png')">
+4.The Picture Element
+1) One of these elements is NOT a legal HTML element, which one?
+The <image> element
+2) Consider the following code:
+<picture>
+  <source srcset='avatar.png'>
+  <source srcset='mustang.jpg'>
+</picture>
+What will be the result if the browser supports both images?
+Only the first image will be displayed
+3) True or False. An <img> element inside a <picture> element wil always be prioritised before any image defined in a <source> element.
+False
+
+HTML Favicon
+
+1) In which HTML element is the Favicon defined?
+The <link> element
+2) Which HTML tag is used to handle the favicon (the little image to the left in the browser tab):
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+3) True or False. Favicons must have the .ico file extension.
+False
+
+HTML Page Title
+
+1) In which HTML element is the page title defined?
+The <title> element
+2) Consider this web page:
+Welcome
+3) True or False. A page should only have one title element.
+True
+
+HTML Tables
+1.HTML Tables
+1) What is the correct tag name for a table-cell in HTML?
+<td>
+2) What is the correct tag name for a table-row in HTML?
+<tr>
+3) Add a table row at the end of the table, with two table cells.
+The two table cells should have the value "Eve Jackson" and "94".
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+2.Tables Borders
+1) What is the correct CSS property for styling the border of a table?
+border
+2) What is the correct CSS code to turn this table:
+border-collapse: collapse;
+3) Use the correct CSS border values to create a solid black 3 pixels border on a table element.
+table, th, td {
+    border: 3px solid black ;
+}
+3.Table Sizes
+1) What is the correct CSS property for styling the width of a table?
+width
+2) True or False. To specify a table width, you are only allowed to use percentages as a value.
+False
+3) Use CSS styles to make the table 300 pixels wide.
+<table style="width:300px;">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+</table>
+4.Table Headers 
+1) What is the correct tag name for a table-header in HTML?
+<th>
+2) Add a table row with two table headers. The two table headers should have the value "Name" and "Age".
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill Smith</td>
+    <td>50</td>
+  </tr>
+</table>
+3) Add a table caption that says "Names".
+<table>
+  <caption>Names</caption>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+</table>
+5.Padding & Spacing
+1) What is the correct CSS property for styling the padding inside table cells?
+padding
+2) What is the correct CSS property for styling the space between the table cells?
+border-spacing
+3) Use the correct CSS property to add 15 pixels of space between the cell border and cell content. 
+The result should look like this: 
+.table td  { 
+ padding: 15px;
+}
+6.Colspan & Rowspan
+1) What is the correct HTML attribute for specifying how many rows a cell should span?
+rowspan
+2) Use the correct HTML attribute to make the second TH element span two rows.
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Jill Smith</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-77854</td>
+  </tr>
+  <tr>
+    <td>555-77854</td>
+  </tr>
+</table>
+3) Use the correct HTML attribute to make the first TH element span two columns.
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+HTML Lists
+1.Lists
+1) What is the correct tag name for list items?
+<li>
+2) Which one is NOT a legal element in HTML?
+<ll>
+3) True or False. The list items in ordered lists will be marked with small black circles by default.
+False 
+2.Unordered Lists
+1) What is the correct CSS property to use when defining the style of a list marker of unordered lists?
+list-style-type
+2) Add a list item with the text "Coffee" inside the <ul>.
+<ul>
+<li>Coffee</li>
+</ul>
+3) Finish the HTML code to make an unordered list.
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+4) Use CSS to display squares instead of bullets.
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+3.Ordered Lists
+1) What is the correct HTML attribute to use when defining the type of the list item marker of ordered lists?
+type
+2) Finish the HTML code to make an ordered list.
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+3) Use the correct HTML attribute to display letters (uppercase ABC) instead of numbers.
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+4) Use the correct HTML attribute to display uppercase roman numbers.
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+4.Other Lists
+1) What is the correct tag name for a description list?
+<dl>
+2) Use the correct HTML elements to make a description of each term in the description list.
+<dl>
+  <dt>Coffee</dt>   
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+3) What is the correct tag name for describing the term of a definition list?
+<dt>
+
+HTML Block & Inline
+
+1) Which type of elements takes up the full width available?
+Block elements
+2) Name one HTML block element.
+div
+3) Name one HTML inline element.
+span
+
+HTML Div 
+
+1) Consider the following code:
+<div style='width:200px;margin:auto'>
+  <h2>London</h2>
+</div>
+How will the DIV element be aligned?
+Center aligned
+2) True or False. You cannot align DIV elements side by side
+False
+3) One of the following statements is true about the DIV element, which one?
+By default, DIV elements come with line breaks before and after
+
+HTML Classes
+
+1) True or False. The class name is case sensitive
+True
+2) In the <style> section, create a class selector named "special". Add a color property with the value "blue" inside the "special" class.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.special {
+  color:blue;
+}
+</style>
+</head>
+<body>
+<p class="special">My paragraph</p>
+</body>
+</html>
+3) Add the correct class to make the H1 element red.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mystyle {color:red;}
+</style>
+</head>
+<body>
+<h1 class="mystyle">My Home Page</h1>
+</body>
+</html>
+4) Add two classes to the H1 element, to make the background pink and the color red.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.intro {background:pink;}
+.special {color:red;}
+</style>
+</head>
+<body>
+<h1 class="intro special">My Home Page</h1>
+</body>
+</html>
+
+HTML Id 
+
+1) True or False. The id name is case sensitive
+True
+2) Add the correct HTML attribute to make the H1 element red.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myheader {color:red;}
+</style>
+</head>
+<body>
+<h1 id="myheader">My Home Page</h1>
+</body>
+</html>
+3) Create an id selector named "special". Add a color property with the value "blue" inside the "special" declaration block.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#special { 
+  color:blue;
+}
+</style>
+</head>
+<body>
+<p id="special">My paragraph</p>
+</body>
+</html>
