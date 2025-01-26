@@ -3,17 +3,33 @@
     <head>
         <meta charset="utf-8">
         <link href="css/styles.css" rel="stylesheet"/>
+        <link rel="icon" type="image/x-icon" href="assets/facebook-brands-solid.png">
         <title>facebook</title>
         <style>
+             html{
+                display: flex;
+                }
+            body{
+                margin:0 auto;
+                display: flex;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+                background-color: #f2f4f7;
+                width: 100%;
+                height: 100vh;
+                direction: ltr;
+                line-height: 1.34;
+                overflow-y: scroll;
+            }   
             div{
                 display: block;
                 unicode-bidi: isolate;
             }
             .container{
                 position: relative;
-            }
-            .borders{
-                border-radius: 6px;
+                width:100%;
+
             }
             .centered{
                 position: absolute;
@@ -68,8 +84,8 @@
             
         </style>
     </head>
-    <body>
-        <div class="div0 container centered">
+    <body class="container centered>
+        <div class="div0">
             <div class="div1">
             <div class="div2">
                 <div class="left-part">
