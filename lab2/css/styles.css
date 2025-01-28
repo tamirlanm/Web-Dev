@@ -1,24 +1,21 @@
 
-.div0{
-    height:895px;
-}
-
 .div1{
     padding-top:72px;
     padding-bottom: 112px;
     margin:0;
     width:auto;
+    background-color: #f2f4f7;
+
 }
 .div2{
     display: flex;
-    margin: 0 269px 0 269px; 
-    width: 980px;
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 980px;
     height: 496px;
     padding-top:20px;
     padding-bottom:20px;
-    flex: 1 1 auto;
     min-width: 500px;
-    margin-bottom: 0;
 }
 .left-part{
     padding-right: 32px;
@@ -63,9 +60,6 @@
     unicode-bidi: isolate;
     line-height: 16px;
 }
- ._right-part{
-    float: right;
-}
 .right-part2{
     height: 456px;
     display: block;
@@ -73,7 +67,6 @@
     padding-top:10px;
 }
 .right-part3{
-    unicode-bidi: isolate ;
     background-color: #fff;
     border-radius: 8px;
     box-sizing: border-box;
@@ -111,10 +104,10 @@
     justify-content: center;
 }
 .ff2{
-    border:1px solid #dddfe2;
-    color:#1d2129;
-    height: 22px;
-    line-height: 16px;
+        border:1px solid #dddfe2;
+        color:#1d2129;
+        height: 22px;
+        line-height: 16px;
 
 }
 .right-part-pass{
@@ -204,10 +197,9 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width:100%;
     background-color: #fff;
-    height: 100%;
-    min-height: 196px;
+    min-height: 100%;
+    width: 100%;
 }
 .footer2{
     padding-top:20px;
@@ -216,8 +208,6 @@
     font-size: 12px;
     height: 195px;
     line-height: 16px;
-    position: fixed;
-    max-height: 196px;
 }
 .footer3{
     margin:0 269px 0 269px;
@@ -225,6 +215,7 @@
     width:980px;   
     height: 195px;
     line-height: 17px;
+
 }
 .ulList{
    color: rgb(138, 141, 145);
