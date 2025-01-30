@@ -170,7 +170,7 @@
     font-weight: 700;
     width:238px;
     font-family: sans-serif;
-    text-decoration: none;
+    text-decoration-line: none;
     text-align: center;
     position: relative;
     vertical-align: middle;
@@ -178,6 +178,7 @@
     box-sizing: content-box;
 }
 .signup{
+    text-decoration-color: black;
     font-family: sans-serif;
     font-size: 14px;
     font-weight: 400;
