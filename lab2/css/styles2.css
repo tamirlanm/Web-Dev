@@ -1,6 +1,6 @@
 .div0{
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
@@ -428,12 +428,7 @@ button{
     font-weight: 400;
 
 }
-.sp2{
-    height: 12px;
-    cursor: pointer;
-    vertical-align: top;
 
-}
 
 .cl{
     margin-left: 4px;
@@ -442,6 +437,7 @@ button{
     flex-direction: row;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
+    align-content: baseline;
 }
 .svgg{
     color: rgb(115,115,115);
