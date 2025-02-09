@@ -1,0 +1,23 @@
+body{
+    flex: 1 1 auto;
+}
+.universalheader{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hcl{
+    min-width: 250px;
+    margin-top: 0px;
+    font-size:15px;
+    background-color: #fff;
+}
+.hdiv{
+    width: 1600px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+
+}

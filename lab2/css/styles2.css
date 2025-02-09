@@ -171,7 +171,6 @@ button{
 }
 .button{
     display: flex;
-    align-items: stretch;
     justify-content: center;
     height: 32px;
     line-height: 32px;
