@@ -1,0 +1,71 @@
+.listing {
+    background-color: #efcffa;
+    border-radius: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-wrap: wrap;
+    text-align: center; /* Центрируем кнопки */
+  }
+  .share-button, .share-button2 {
+    display: inline-block; /* Позволяет корректно центрировать */
+    margin: 10px auto; /* Авто-маржины для центрирования */
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  .share-button{
+    margin-top:20px;
+    padding: 10px;
+    border: solid 1px #075E54;
+    background: 	#25D366;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 4px;
+  }
+  .share-button2 {
+    padding: 10px;
+    border: solid 1px #8B89E6;
+    background: 	#24A1DE;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.share-button:hover {
+    background: #8B89E6;
+    border-color: #5d1278;
+}
+  .listing-heading {
+    color: #4c1f5c;  
+    padding: 10px 20px 0 20px;
+  }
+  .listing-photo {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+  }
+  .listing-location {
+    
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: auto;
+    padding-top: auto;
+    color: #4c1f5c;
+  }
+  .listing-location::before {
+    content: url("/assets/rating-rate-svgrepo-com.svg") / "";
+  }
+  section.listing a {
+    padding-left: 20px;
+    text-decoration: none;
+    color:#8B89E6 ;
+  }
+  section.listing a::after {
+    content: "\203A";
+    margin-left: 5px;
+  }

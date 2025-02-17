@@ -1,0 +1,82 @@
+
+.listing-photo {
+    height: 450px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 30px;
+    float: right;
+  }
+  .listing-heading {
+    color: #4c1f5c;  
+    font-size: 35pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .listing-location::before {
+    content: url('/assets/rating-rate-svgrepo-com.svg') / '';
+    display: inline-block;
+    margin-right: -15px;
+  }
+  .primary{
+    padding: 10px;
+    border: solid 1px #8B89E6;
+    background: #5d1278;
+    color: white;
+    border-radius: 8px;     
+    cursor: pointer;
+
+  }
+  .listing-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #4c1f5c;  
+    font-size: 24pt;
+    margin-bottom: 15px;
+  }
+  .listing-features > .section-heading {
+    color: #8B89E6;
+    font-size: 24pt;
+    margin-bottom: 15px;
+  }
+  .listing-features {
+    margin-bottom: 20px;
+  }
+  .listing-features li {
+    font-size: 14pt;
+  }
+  li {
+    list-style-type: none;
+  }
+  .listing-apply .section-heading {
+    color: #f5f5f5;
+    font-size: 18pt;
+    margin-bottom: 15px;
+  }
+  label, input {
+    display: block;
+    background-color: #f5f5f5;
+  }
+  label {
+    color: #8B89E6;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12pt;
+  }
+  input {
+    font-size: 16pt;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 400px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid .3px;
+  }
+  @media (max-width: 1024px) {
+    .listing-photo {
+      width: 100%;
+      height: 400px;
+    }
+  }
