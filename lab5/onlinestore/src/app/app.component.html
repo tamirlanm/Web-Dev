@@ -1,0 +1,28 @@
+<div class="container">
+  <a [routerLink]="['']" style="text-decoration: none;">
+    <div class="header">
+      <img src="/assets/logo.png" alt="logo" aria-hidden="true"/>
+      <h2 >Добро пожаловать в наш магазин!✨</h2>
+    </div>
+  </a>
+
+  <div class="content">
+    <div class="categories">
+      <button (click)="showAllProducts()">Все товары</button>
+      <button 
+        *ngFor="let category of categories" 
+        (click)="selectCategory(category)"
+        [class.active]="selectedCategory.name === category.name"
+      >
+        {{ category.name }}
+      </button>
+    </div>
+    <div class="products">
+      <h2>{{ selectedCategory.name || 'Все товары' }}</h2>
+      <app-product-list
+        *ngIf="selectedCategory"
+        [products]="selectedCategory.products">
+      </app-product-list>
+    </div>
+  </div>
+</div>

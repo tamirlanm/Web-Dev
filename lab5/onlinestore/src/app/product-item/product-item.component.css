@@ -1,0 +1,107 @@
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-left:16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  margin: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  height: 610px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.photo-container {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.product-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.product-details {
+  margin-top: 12px;
+}
+
+h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 12px;
+}
+
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+
+.price {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.rating {
+  color: #f39c12;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-group {
+  display: flex;
+  gap: 8px; /* Расстояние между кнопками */
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buyy{
+  text-decoration: none;
+  color: #6c5ce7;
+}
+
+.like-button {
+  background: #3498db;
+  color: white;
+}
+
+.remove-button {
+  background: #e74c3c;
+  color: white;
+}
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  cursor: pointer
+}
+.telegram-button {
+  background-color: #24A1DE;
+  color: white;
+  cursor: pointer;
+}

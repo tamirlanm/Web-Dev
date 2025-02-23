@@ -1,0 +1,23 @@
+<div class="product-card">
+  <div class="photo-container">
+    <img [attr.src]="product.photo[0]" alt="{{ product.name }}" class="product-photo"/>
+  </div>
+  <div class="product-details">
+    <h3>{{ product.name }}</h3>
+    <p class="description">{{ product.description }}</p>
+    <div class="price-rating">
+      <p class="price">Цена: {{ product.price }} {{ product.pricetyp }}</p>
+      <p class="rating">✨ {{ product.rating }}/5</p>
+      <p class="likes">💘 {{product.likes }}</p>
+    </div>
+    <div class="actions">
+      <div class="buttons-group">
+        <button (click)="onLikeClick()" class="like-button">💕</button>
+        <button (click)="onRemoveClick()" class="remove-button">❌</button>
+      </div>
+      <a [href]="product.link" target="_blank" class="buyy">Купить</a>
+      <button (click)="share(product.link, 'whatsapp')" class="whatsapp-button">Поделиться в Whatsapp</button>
+      <button (click)="share(product.link, 'telegram')" class="telegram-button">Поделиться в Telegram</button>
+    </div>
+  </div>
+</div>

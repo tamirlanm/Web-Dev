@@ -1,0 +1,9 @@
+<div class="products-grid">
+  <app-product-item
+    *ngFor="let product of products"
+    [product]="product"
+    (like)="onLike($event)"
+    (remove)="onRemove($event)"
+  >
+  </app-product-item>
+</div>
