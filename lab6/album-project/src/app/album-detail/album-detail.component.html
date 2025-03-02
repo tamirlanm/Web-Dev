@@ -1,42 +1,20 @@
-<div class="album-detail-container">
-    <div *ngIf="isLoading" class="loading">
-      Loading album details...
-    </div>
+<!-- album-detail.component.html -->
+<div *ngIf="album" class="album-detail">
+  <h2>Album Details</h2>
   
-    <div *ngIf="!isLoading && !album" class="error">
-      Album not found or error loading data.
-    </div>
-  
-    <div *ngIf="album" class="album-card">
-      <h1>Album Details</h1>
-      
-      <div class="album-info">
-        <div class="form-group">
-          <label for="albumId">Album ID:</label>
-          <input type="text" id="albumId" [value]="album.id" disabled class="form-control">
-        </div>
-        
-        <div class="form-group">
-          <label for="userId">User ID:</label>
-          <input type="text" id="userId" [value]="album.userId" disabled class="form-control">
-        </div>
-        
-        <div class="form-group">
-          <label for="title">Album Title:</label>
-          <input 
-            type="text" 
-            id="title" 
-            [(ngModel)]="editTitle" 
-            class="form-control"
-            placeholder="Enter album title"
-          >
-        </div>
-      </div>
-      
-      <div class="actions">
-        <button (click)="saveAlbum()" class="btn btn-success">Save</button>
-        <button (click)="goToPhotos()" class="btn btn-primary">Photos</button>
-        <button (click)="goBack()" class="btn btn-secondary">Return</button>
-      </div>
+  <div class="album-info">
+    <p><strong>ID:</strong> {{ album.id }}</p>
+    <p><strong>User ID:</strong> {{ album.userId }}</p>
+    
+    <div class="title-edit">
+      <label><strong>Title:</strong></label>
+      <input type="text" [(ngModel)]="editTitle" class="form-control">
+      <button (click)="saveTitle()" class="btn btn-success">Save</button>
     </div>
   </div>
+  
+  <div class="album-actions">
+    <button (click)="goBack()" class="btn btn-secondary">Return</button>
+    <button (click)="goToPhotos()" class="btn btn-primary">Photos</button>
+  </div>
+</div>

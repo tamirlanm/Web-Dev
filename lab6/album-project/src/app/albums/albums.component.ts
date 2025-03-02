@@ -1,3 +1,4 @@
+// albums.component.ts
 import { Component, OnInit } from '@angular/core';
 import { AlbumsService } from '../services/albums.service';
 import { Album } from '../album';
@@ -9,60 +10,32 @@ import { Album } from '../album';
 })
 export class AlbumsComponent implements OnInit {
   albums: Album[] = [];
-  newAlbum: Album = { userId: 1, id: 0, title: '' };
-  showAddForm = false;
+  newAlbum: Partial<Album> = { userId: 1, title: '' };
 
-  constructor(private albumsService: AlbumsService) { }
+  constructor(private albumsService: AlbumsService) {}
 
   ngOnInit(): void {
-    this.loadAlbums();
+    this.getAlbums();
   }
 
-  loadAlbums(): void {
-    this.albumsService.getAlbums().subscribe(
-      (data) => {
-        this.albums = data;
-      },
-      (error) => {
-        console.error('Error fetching albums:', error);
-      }
-    );
+  getAlbums(): void {
+    this.albumsService.getAlbums().subscribe(albums => {
+      this.albums = albums;
+    });
   }
 
   deleteAlbum(id: number): void {
-    this.albumsService.deleteAlbum(id).subscribe(
-      () => {
-        // Update the UI by removing the deleted album
-        this.albums = this.albums.filter(album => album.id !== id);
-        alert('Album deleted successfully!');
-      },
-      (error) => {
-        console.error('Error deleting album:', error);
-      }
-    );
-  }
-
-  toggleAddForm(): void {
-    this.showAddForm = !this.showAddForm;
-    this.newAlbum = { userId: 1, id: 0, title: '' };
+    this.albumsService.deleteAlbum(id).subscribe(() => {
+      this.albums = this.albums.filter(album => album.id !== id);
+    });
   }
 
   createAlbum(): void {
-    if (!this.newAlbum.title.trim()) {
-      alert('Album title cannot be empty!');
-      return;
+    if (this.newAlbum.title?.trim()) {
+      this.albumsService.createAlbum(this.newAlbum).subscribe(album => {
+        this.albums.unshift(album);
+        this.newAlbum.title = '';
+      });
     }
-
-    this.albumsService.createAlbum(this.newAlbum).subscribe(
-      (createdAlbum) => {
-        // Add the new album to the list
-        this.albums.unshift(createdAlbum);
-        this.toggleAddForm();
-        alert('Album created successfully!');
-      },
-      (error) => {
-        console.error('Error creating album:', error);
-      }
-    );
   }
 }

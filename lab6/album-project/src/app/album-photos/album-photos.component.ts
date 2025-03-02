@@ -1,7 +1,8 @@
+// album-photos.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlbumsService } from '../services/albums.service';
-import { Photo } from '../album';
+import { Album, Photo } from '../album';
 
 @Component({
   selector: 'app-album-photos',
@@ -11,30 +12,22 @@ import { Photo } from '../album';
 export class AlbumPhotosComponent implements OnInit {
   photos: Photo[] = [];
   albumId: number = 0;
-  isLoading = true;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private albumsService: AlbumsService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
-    this.loadPhotos();
+    this.getPhotos();
   }
 
-  loadPhotos(): void {
+  getPhotos(): void {
     this.albumId = Number(this.route.snapshot.paramMap.get('id'));
-    this.albumsService.getAlbumPhotos(this.albumId).subscribe(
-      (data) => {
-        this.photos = data;
-        this.isLoading = false;
-      },
-      (error) => {
-        console.error('Error fetching album photos:', error);
-        this.isLoading = false;
-      }
-    );
+    this.albumsService.getAlbumPhotos(this.albumId).subscribe(photos => {
+      this.photos = photos;
+    });
   }
 
   goBack(): void {

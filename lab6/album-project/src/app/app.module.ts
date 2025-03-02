@@ -1,4 +1,4 @@
-
+// app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,8 +25,7 @@ import { AlbumPhotosComponent } from './album-photos/album-photos.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    NgModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
