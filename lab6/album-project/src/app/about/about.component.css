@@ -1,0 +1,16 @@
+.about-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .features, .implementation {
+    margin-top: 30px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }

@@ -1,0 +1,41 @@
+<div class="albums-container">
+    <h1>Albums</h1>
+    
+    <div class="actions">
+      <button (click)="toggleAddForm()" class="btn btn-primary">
+        {{ showAddForm ? 'Cancel' : 'Add New Album' }}
+      </button>
+    </div>
+  
+    <div *ngIf="showAddForm" class="add-form">
+      <h2>Add New Album</h2>
+      <div class="form-group">
+        <label for="title">Album Title:</label>
+        <input 
+          type="text" 
+          id="title" 
+          name="title" 
+          [(ngModel)]="newAlbum.title" 
+          placeholder="Enter album title"
+          class="form-control"
+        >
+      </div>
+      <button (click)="createAlbum()" class="btn btn-success">Create Album</button>
+    </div>
+  
+    <div *ngIf="albums.length === 0" class="loading">
+      Loading albums...
+    </div>
+  
+    <div class="album-list">
+      <div *ngFor="let album of albums" class="album-item">
+        <div class="album-content">
+          <span class="album-id">{{ album.id }}</span>
+          <a [routerLink]="['/albums', album.id]" class="album-title">{{ album.title }}</a>
+        </div>
+        <div class="album-actions">
+          <button (click)="deleteAlbum(album.id)" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>

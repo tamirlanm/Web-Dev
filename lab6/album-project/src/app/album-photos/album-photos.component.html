@@ -1,0 +1,22 @@
+<div class="photos-container">
+    <div class="photos-header">
+      <h1>Album Photos</h1>
+      <button (click)="goBack()" class="btn btn-secondary">Return</button>
+    </div>
+    
+    <div *ngIf="isLoading" class="loading">
+      Loading photos...
+    </div>
+    
+    <div *ngIf="!isLoading && photos.length === 0" class="no-photos">
+      No photos found for this album.
+    </div>
+    
+    <div class="photos-grid">
+      <div *ngFor="let photo of photos" class="photo-card">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title" class="photo-thumbnail">
+        <div class="photo-title">{{ photo.title }}</div>
+        <a [href]="photo.url" target="_blank" class="btn btn-sm btn-primary">View Full Size</a>
+      </div>
+    </div>
+  </div>

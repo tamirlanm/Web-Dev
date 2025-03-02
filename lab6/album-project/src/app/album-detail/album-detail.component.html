@@ -1,0 +1,42 @@
+<div class="album-detail-container">
+    <div *ngIf="isLoading" class="loading">
+      Loading album details...
+    </div>
+  
+    <div *ngIf="!isLoading && !album" class="error">
+      Album not found or error loading data.
+    </div>
+  
+    <div *ngIf="album" class="album-card">
+      <h1>Album Details</h1>
+      
+      <div class="album-info">
+        <div class="form-group">
+          <label for="albumId">Album ID:</label>
+          <input type="text" id="albumId" [value]="album.id" disabled class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="userId">User ID:</label>
+          <input type="text" id="userId" [value]="album.userId" disabled class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="title">Album Title:</label>
+          <input 
+            type="text" 
+            id="title" 
+            [(ngModel)]="editTitle" 
+            class="form-control"
+            placeholder="Enter album title"
+          >
+        </div>
+      </div>
+      
+      <div class="actions">
+        <button (click)="saveAlbum()" class="btn btn-success">Save</button>
+        <button (click)="goToPhotos()" class="btn btn-primary">Photos</button>
+        <button (click)="goBack()" class="btn btn-secondary">Return</button>
+      </div>
+    </div>
+  </div>

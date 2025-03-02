@@ -1,0 +1,101 @@
+.albums-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    margin-bottom: 20px;
+  }
+  
+  .add-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .album-list {
+    margin-top: 20px;
+  }
+  
+  .album-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .album-content {
+    flex: 1;
+  }
+  
+  .album-id {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #6c757d;
+  }
+  
+  .album-title {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .album-title:hover {
+    text-decoration: underline;
+  }
+  
+  .album-actions {
+    margin-left: 15px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    color: #6c757d;
+  }
