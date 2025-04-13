@@ -1,0 +1,21 @@
+<div class="app-container">
+  <header>
+    <div class="header-content">
+      <h1>HeadHunter Application</h1>
+      <nav>
+        <ul>
+          <li><a routerLink="/companies" routerLinkActive="active">Companies</a></li>
+          <li><a routerLink="/top_vacancies" routerLinkActive="active">Top Vacancies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 HeadHunter Front</p>
+  </footer>
+</div>

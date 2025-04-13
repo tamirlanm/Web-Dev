@@ -1,0 +1,30 @@
+<div class="container">
+    <div *ngIf="company" class="company-details">
+      <h2>{{ company.name }} - Vacancies</h2>
+      <p>{{ company.description }}</p>
+    </div>
+    
+    <div *ngIf="loading" class="loading">
+      Loading vacancies...
+    </div>
+    
+    <div *ngIf="error" class="error">
+      {{ error }}
+    </div>
+    
+    <div *ngIf="!loading && !error" class="vacancy-list">
+      <div *ngFor="let vacancy of vacancies" class="vacancy-card">
+        <h3>{{ vacancy.name }}</h3>
+        <p *ngIf="vacancy.salary"><strong>Salary:</strong> {{ vacancy.salary }}</p>
+        <p>{{ vacancy.description }}</p>
+      </div>
+      
+      <div *ngIf="vacancies.length === 0" class="no-data">
+        No vacancies found for this company.
+      </div>
+    </div>
+    
+    <div class="nav-buttons">
+      <button routerLink="/companies">Back to Companies</button>
+    </div>
+  </div>

@@ -99,7 +99,7 @@ class TopTenVacanciesAPIView(APIView):
 class CompanyVacancies(generics.ListCreateAPIView):
     serializer_class = VacancySerializer
     def get_queryset(self):
-        company_id = self.kwargs['pk']
+        company_id = self.kwargs['id']
         return Vacancy.objects.filter(company_id = company_id)
 
 class VacancyList(generics.ListCreateAPIView):
