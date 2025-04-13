@@ -1,0 +1,43 @@
+
+[
+    {
+        "model": "api.company",
+        "pk": 1,
+        "fields": {
+            "name": "Google",
+            "description": "A multinational technology company specializing in Internet-related services and products",
+            "city": "Mountain View",
+            "address": "1500 Amphitheatre Parkway"
+        }
+    },
+    {
+        "model": "api.company",
+        "pk": 2,
+        "fields":{
+            "name": "Amazon",
+            "description": "An American multinational technology company focusing on e-commerce, etc.",
+            "city": "Seattle",
+            "address": "410 Terry"
+        }
+    },
+    {
+        "model": "api.vacancy",
+        "pk": 1,
+        "fields":{
+            "name": "Software Engineer",
+            "description": "Developing and maintaining Google applications",
+            "salary": 150000.0,
+            "company": 1
+        }
+    },
+    {
+        "model": "api.vacancy",
+        "pk": 2,
+        "fields": {
+            "name": "Animator",
+            "description": "Animation for season 4 Invincible",
+            "salary": 200000.0,
+            "company": 2
+        }
+    }
+]
