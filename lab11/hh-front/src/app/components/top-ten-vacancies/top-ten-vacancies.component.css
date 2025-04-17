@@ -1,0 +1,138 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  text-align: center;
+  color: #dc3545;
+  padding: 20px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.error-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.no-vacancies {
+  text-align: center;
+  color: #6c757d;
+  padding: 40px 0;
+}
+
+.vacancies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vacancy-item {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.vacancy-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.vacancy-content {
+  flex: 1;
+}
+
+h3 {
+  margin-top: 0;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.vacancy-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+.salary {
+  font-weight: bold;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .vacancy-item {
+    flex-direction: column;
+  }
+  
+  .rank {
+    margin-bottom: 10px;
+    margin-right: 0;
+    align-self: center;
+  }
+  
+  .vacancy-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
