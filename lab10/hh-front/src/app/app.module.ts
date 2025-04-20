@@ -1,31 +1,35 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { HttpClientModule } from "@angular/common/http";
-import { RouterModule } from "@angular/router";
-
-import { AppComponent } from "./app.component";
-import { CompanyListComponent } from "./company-list/company-list.component";
-import { VacancyListComponent } from "./vacancy-list/vacancy-list.component";
-import { TopVacanciesComponent } from "./top-vacancies/top-vacancies.component";
+import { AppComponent } from './app.component';
+import { CompanyListComponent } from './components/company-list/company-list.component';
+import { VacancyListComponent } from './components/vacancy-list/vacancy-list.component';
+import { TopTenVacanciesComponent } from './components/top-ten-vacancies/top-ten-vacancies.component';
+import { AllVacanciesComponent } from './components/all-vacancies/all-vacancies.component';
 
 @NgModule({
-    declarations:[
-        AppComponent,
-        CompanyListComponent,
-        VacancyListComponent
-    ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        RouterModule.forRoot([
-            { path: '', redirectTo: '/companies', pathMatch: 'full'},
-            { path: 'companies', component: CompanyListComponent},
-            { path: 'companies/:id/vacancies', component: VacancyListComponent},
-            { path: 'vacancies/top_ten', component: TopVacanciesComponent }
-        ])
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: '', redirectTo: '/companies', pathMatch: 'full' },
+      { path: 'companies', component: CompanyListComponent },
+      { path: 'companies/:id/vacancies', component: VacancyListComponent },
+      { path: 'vacancies/', component: AllVacanciesComponent},
+      { path: 'vacancies/:id', component: VacancyListComponent},
+      { path: 'vacancies/top-ten', component: TopTenVacanciesComponent }
+    ]),
+    AppComponent,
+    CompanyListComponent,
+    VacancyListComponent,
+    TopTenVacanciesComponent,
+    AllVacanciesComponent
+  ],
+  providers: [],
+  bootstrap: []
 })
-export class AppModule {} 
+export class AppModule { }

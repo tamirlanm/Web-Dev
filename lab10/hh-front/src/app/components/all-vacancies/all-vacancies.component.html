@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>All Available Vacancies</h2>
+  
+    <div class="loading" *ngIf="loading">Loading...</div>
+    
+    <div class="error" *ngIf="error">{{ error }}</div>
+    
+    <div class="vacancies-list" *ngIf="!loading && !error">
+      <div *ngIf="vacancies.length === 0">No vacancies available</div>
+      
+      <div class="vacancy-item" *ngFor="let vacancy of vacancies">
+        <h3>{{ vacancy.name }}</h3>
+        <p>{{ vacancy.description }}</p>
+        <div class="vacancy-details">
+          <span class="salary" *ngIf="vacancy.salary">Salary: {{ vacancy.salary }}</span>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,43 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .loading, .error {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .vacancies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .vacancy-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vacancy-item h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .vacancy-details {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .salary {
+    font-weight: bold;
+    color: #28a745;
+  }

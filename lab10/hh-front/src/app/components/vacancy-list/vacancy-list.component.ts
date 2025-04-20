@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Vacancy } from '../models/vacancy';
-import { Company } from '../models/company';
-import { ApiService } from '../services/api.service';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Vacancy } from '../../models/vacancy';
+import { Company } from '../../models/company';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-vacancy-list',
   templateUrl: './vacancy-list.component.html',
-  styleUrls: ['./vacancy-list.component.css']
+  styleUrls: ['./vacancy-list.component.css'],
+  standalone: true,
+  imports: [CommonModule, RouterModule]
 })
 export class VacancyListComponent implements OnInit {
   companyId: number = 0;
@@ -23,7 +26,7 @@ export class VacancyListComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.companyId = +params['id'];
+      this.companyId = +params['id']; 
       this.loadCompanyDetails();
       this.loadCompanyVacancies();
     });
@@ -34,9 +37,11 @@ export class VacancyListComponent implements OnInit {
     this.apiService.getCompany(this.companyId).subscribe({
       next: (data) => {
         this.company = data;
+        this.loading = false;
       },
       error: (err) => {
         this.error = 'Error loading company details';
+        this.loading = false;
         console.error(err);
       }
     });

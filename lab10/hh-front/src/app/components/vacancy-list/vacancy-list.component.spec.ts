@@ -8,7 +8,7 @@ describe('VacancyListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VacancyListComponent]
+      declarations: [VacancyListComponent]
     })
     .compileComponents();
 

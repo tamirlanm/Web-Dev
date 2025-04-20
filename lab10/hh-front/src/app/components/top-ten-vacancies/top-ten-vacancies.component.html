@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Top 10 Vacancies</h2>
+  
+  <div class="loading" *ngIf="loading">
+    <div class="spinner"></div>
+    <p>Loading top vacancies...</p>
+  </div>
+  
+  <div class="error" *ngIf="error">
+    <div class="error-icon">⚠️</div>
+    <p>{{ error }}</p>
+  </div>
+  
+  <div class="vacancies-list" *ngIf="!loading && !error">
+    <div *ngIf="topVacancies.length === 0" class="no-vacancies">
+      <p>No top vacancies available at the moment.</p>
+    </div>
+    
+    <div class="vacancy-item" *ngFor="let vacancy of topVacancies; let i = index">
+      <div class="rank">{{ i + 1 }}</div>
+      <div class="vacancy-content">
+        <h3>{{ vacancy.name }}</h3>
+        <p>{{ vacancy.description }}</p>
+        <div class="vacancy-details">
+          <span class="salary" *ngIf="vacancy.salary">Salary: {{ vacancy.salary }}</span>
+          <a [routerLink]="['/companies', vacancy.company, 'vacancies']">View Company</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
